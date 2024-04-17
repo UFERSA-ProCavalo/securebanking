@@ -1,0 +1,65 @@
+.login_container{
+    -fx-background-color: #EEEEEE;
+}
+
+/* left-Side */
+.login_logo_container{
+    -fx-background-color: #0f6586;
+    -fx-alignment: center;
+}
+
+.login_logo_container Text {
+    -fx-font-size: 2em;
+    -fx-fill: #EEEEEE;
+}
+
+.login_logo_container FontAwesomeIconView {
+    -fx-fill: #EEEEEE;
+}
+
+
+/* Form */
+.login_form_container{
+    -fx-alignment: top-left;
+    -fx-spacing: 5;
+}
+
+.login_form_container Label {
+    -fx-font-size: 1.1em;
+    -fx-font-weight: bold;
+}
+
+.input_field{
+    -fx-background-color: #FFFFFF;
+    -fx-pref-height: 35;
+    -fx-font-size: 1.2em;
+}
+
+.login_form_container_Signup {
+    -fx-background-color: linear-gradient(to right, #0f6586, #0e3a4b);
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 1.2em;
+    -fx-pref-width: 100;
+    -fx-pref-height: 30;
+}
+
+.login_form_container_Cancel {
+    -fx-background-color: rgb(165, 18, 18);
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 1.2em;
+    -fx-pref-width: 100;
+    -fx-pref-height: 30;
+}
+
+.login_form_container_Signup :hover {
+    -fx-cursor: hand;
+}
+
+.login_form_container_Cancel :hover {
+    -fx-cursor: hand;
+}
+
+.error_label{
+    -fx-text-fill: #FF0000;
+    -fx-font-size: 1em;
+}

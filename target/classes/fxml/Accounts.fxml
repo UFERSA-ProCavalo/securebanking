@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="850.0" styleClass="accounts_container" stylesheets="@../styles/Accounts.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ufersa.cc.sc.controllers.AccountsController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Checking Account" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <VBox prefHeight="300.0" prefWidth="450.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Account Number:" />
+            <Label fx:id="account_number" text="524785" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Transaction Limit:" />
+            <Label fx:id="transaction_limit" text="10" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Withdraw Limit:" />
+            <Label fx:id="withdraw_limit" text="\$500,00" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date Created:" />
+            <Label fx:id="account_date" text="22-02-2024" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Balance:" />
+            <Label fx:id="account_balance" text="\$1.500,00" />
+         </children>
+      </VBox>
+      <Text layoutX="14.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Savings Account" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="426.4000005722046" />
+      <VBox layoutX="14.0" layoutY="453.0" prefHeight="90.0" prefWidth="450.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="453.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Balance:" />
+            <Label fx:id="savings_balance" text="\$1.500,00" />
+         </children>
+      </VBox>
+      <Text layoutX="14.0" layoutY="589.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fixed Income" AnchorPane.leftAnchor="14.0" />
+      <VBox layoutX="14.0" layoutY="602.0" prefHeight="90.0" prefWidth="450.0" AnchorPane.leftAnchor="14.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Balance:" />
+            <Label fx:id="fixed_balance" text="\$1.500,00" />
+         </children>
+      </VBox>
+      <Text layoutX="474.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transfer to Savings Account:" AnchorPane.rightAnchor="184.54727172851562" />
+      <TextField fx:id="amount_to_savings" layoutX="496.0" layoutY="57.0" prefHeight="25.0" prefWidth="189.0" AnchorPane.rightAnchor="165.0" AnchorPane.topAnchor="72.0" />
+      <Button fx:id="transfer_to_savings" layoutX="633.0" layoutY="104.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="189.0" text="Transfer" AnchorPane.rightAnchor="165.0" AnchorPane.topAnchor="114.0">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="ARROW_DOWN" />
+         </graphic>
+      </Button>
+      <Text layoutX="488.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transfer to Fixed Income:" AnchorPane.rightAnchor="189.93124389648438" />
+      <TextField fx:id="amount_to_fixed" layoutX="496.0" layoutY="244.0" prefHeight="25.0" prefWidth="189.0" AnchorPane.rightAnchor="165.0" />
+      <Button fx:id="transfer_to_fixed" layoutX="496.0" layoutY="297.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="189.0" text="Transfer" AnchorPane.bottomAnchor="428.0" AnchorPane.rightAnchor="165.0">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="ARROW_DOWN" />
+         </graphic>
+      </Button>
+      <Text layoutX="458.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Withdraw from Savings Account:" AnchorPane.rightAnchor="171.20469665527344" />
+      <TextField fx:id="amount_from_savings" layoutX="455.0" layoutY="458.0" prefHeight="25.0" prefWidth="189.0" AnchorPane.rightAnchor="165.0" />
+      <Button fx:id="withdraw_from_savings" layoutX="455.0" layoutY="482.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="189.0" text="Withdraw" AnchorPane.bottomAnchor="214.0" AnchorPane.rightAnchor="165.0">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="ARROW_UP" />
+         </graphic>
+      </Button>
+      <Text layoutX="467.0" layoutY="588.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Withdraw from Fixed Income:" AnchorPane.rightAnchor="181.58868408203125" />
+      <TextField fx:id="amount_from_fixed" layoutX="455.0" layoutY="609.0" prefHeight="25.0" prefWidth="189.0" AnchorPane.rightAnchor="165.0" />
+      <Button fx:id="withdraw_from_fixed" layoutX="455.0" layoutY="633.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="189.0" text="Withdraw" AnchorPane.bottomAnchor="63.0" AnchorPane.rightAnchor="165.0">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="ARROW_UP" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
