@@ -3,7 +3,6 @@ package ufersa.cc.sc.controllers;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -37,15 +36,29 @@ public class LoginController implements Initializable {
     private Button signup_button;
 
     @FXML
-    private PasswordField hidden_password;
+    private PasswordField password_hidden;
 
     @FXML
-    private FontAwesomeIconView hidden_password_toggle;
+    private Button password_toggle_button;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         login_button.setOnAction(e -> login());
         signup_button.setOnAction(e -> signup());
+
+        password_toggle_button.setOnAction(e -> togglePassword());
+    }
+
+    private void togglePassword() {
+        if (password_field.isVisible()) {
+            password_field.setVisible(false);
+            password_hidden.setVisible(true);
+            password_hidden.setText(password_field.getText());
+        } else {
+            password_field.setVisible(true);
+            password_hidden.setVisible(false);
+            password_field.setText(password_hidden.getText());
+        }
     }
 
     private void login() {

@@ -33,6 +33,6 @@
       <Button fx:id="cancel_button" layoutX="439.0" layoutY="313.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="121.0" styleClass="login_form_container_Cancel" text="Cancel" AnchorPane.rightAnchor="61.0" />
       <Button fx:id="signup_button" layoutX="250.0" layoutY="313.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="200.0" styleClass="login_form_container_Signup" text="Sign up" />
       <PasswordField fx:id="hidden_password" layoutX="133.0" layoutY="121.0" prefWidth="350.0" styleClass="input_field" visible="false" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="108.0" />
-      <FontAwesomeIconView id="password_hidden" fill="#ff1105" glyphName="EYE" layoutX="590.0" layoutY="170.0" size="20" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="115.0" />
+      <FontAwesomeIconView id="hidden_password_toggle" fx:id="hidden_password_toggle" fill="#ff1105" glyphName="EYE" layoutX="590.0" layoutY="170.0" size="20" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="115.0" />
    </children>
 </AnchorPane>

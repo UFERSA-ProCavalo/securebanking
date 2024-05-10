@@ -62,6 +62,16 @@
     -fx-pref-height: 30;
 }
 
+.hidden_password_toggle {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-fill: #0f6586;
+}
+
+.hidden_password_toggle :hover {
+    -fx-cursor: hand;
+}
+
 .login_form_container Button:hover {
     -fx-cursor: hand;
 }

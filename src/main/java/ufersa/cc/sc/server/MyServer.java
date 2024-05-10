@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MyServer {
-    private static List<Thread> clients = new ArrayList<Thread>();
+    private static List<Socket> clients = new ArrayList<Socket>();
 
 
     public static void main(String[] args) throws Exception {
@@ -25,7 +25,12 @@ public class MyServer {
 
                 Thread thread = new Thread(new MyServerTCP(socket));
 
-                clients.add(thread);
+                clients.add(socket);
+                //list clients
+                System.out.println("Active clients: " + clients.size());
+                for (Socket client : clients) {
+                    System.out.println(client.getPort());
+                }
 
                 thread.start();
                 //System.out.println("thread info:" + thread.getId() + " " + thread.getName() + " " + thread.getState());
